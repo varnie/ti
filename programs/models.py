@@ -8,3 +8,5 @@ class Program(models.Model):
     currency = models.TextField(null=False, max_length=3)
     return_percentage = models.DecimalField(max_digits=4, decimal_places=2, null=False)
 
+    def __str__(self):
+        return self.name
